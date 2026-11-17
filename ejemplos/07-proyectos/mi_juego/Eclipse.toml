@@ -1,0 +1,4 @@
+[proyecto]
+nombre = "mi_juego"
+principal = "src/principal.ec"
+version = "0.1.0"

@@ -1,0 +1,12 @@
+sea mut numeros = [1, 2, 3];
+numeros = agregar(numeros, 4);
+numeros = agregar(numeros, 5);
+imprimir(numeros);
+sea copia = copiar(numeros);
+numeros = agregar(numeros, 6);
+imprimir(numeros);
+imprimir(copia);
+sea mut otros = [];
+otros = agregar(otros, 10);
+imprimir(otros);
+imprimir(largo(numeros));

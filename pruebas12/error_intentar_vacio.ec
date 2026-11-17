@@ -1,0 +1,3 @@
+intentar {
+    imprimir("hola");
+}

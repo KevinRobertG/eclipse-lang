@@ -1,0 +1,11 @@
+imprimir(a_numero("12.5"));
+imprimir(a_numero(5));
+imprimir(a_texto(verdadero));
+imprimir(a_texto(nulo));
+imprimir(tipo_de(3.5));
+imprimir(redondear(2.5));
+imprimir(absoluto(0));
+imprimir(mayusculas(""));
+imprimir(contiene("", ""));
+imprimir(aleatorio() >= 0);
+imprimir(aleatorio() < 100);

@@ -1,0 +1,11 @@
+imprimir(reemplazar("hola mundo", "mundo", "Kevin"));
+imprimir(existe("ejemplos/01-basico/hola.ec"));
+imprimir(largo(fecha()) == 10);
+imprimir(largo(hora()) == 8);
+imprimir(largo(fecha_hora()) == 19);
+imprimir(dormir(0));
+sea m = {1: "uno", 2: "dos"};
+imprimir(claves(m));
+imprimir(valores(m));
+imprimir(tiene(m, 1));
+imprimir(tiene(m, 9));

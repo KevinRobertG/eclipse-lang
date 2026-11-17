@@ -1,0 +1,17 @@
+imprimir(ordenar([3, 1, 2]));
+imprimir(ordenar(["pera", "manzana", "uva"]));
+imprimir(ordenar([]));
+imprimir(invertir([1, 2, 3]));
+imprimir(invertir("hola"));
+imprimir(invertir(""));
+imprimir(unir(["a", "b", "c"], ", "));
+imprimir(unir([1, 2, 3], "-"));
+imprimir(unir([], ","));
+imprimir(separar("a,b,c", ","));
+imprimir(separar("hola kevin", " "));
+imprimir(raiz(16));
+imprimir(raiz(2));
+imprimir(raiz(0));
+sea numeros = [5, 2, 8, 1];
+imprimir(ordenar(numeros));
+imprimir(numeros);

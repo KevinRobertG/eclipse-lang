@@ -1,0 +1,16 @@
+imprimir(2 + 3 * 4);
+imprimir(2 * 3 ** 2);
+imprimir(2 ** 3 ** 2);
+imprimir((2 + 3) * 4);
+imprimir(10 - 4 - 3);
+imprimir(100 / 10 / 2);
+imprimir(10 % 3);
+imprimir(-10 % 3);
+imprimir(10.5 % 3);
+imprimir(1 < 2);
+imprimir(5 >= 5);
+imprimir(3 != 4);
+imprimir(verdadero y falso o verdadero);
+imprimir(no falso);
+imprimir(!verdadero);
+imprimir(2 + 3 == 5);

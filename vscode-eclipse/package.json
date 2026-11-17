@@ -1,0 +1,119 @@
+{
+  "activationEvents": [
+    "onLanguage:eclipse"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "configuration": {
+    "properties": {
+      "eclipse.ruta": {
+        "default": "eclipse",
+        "description": "La ruta del programa eclipse (para el servidor de lenguaje). Si está en el PATH, déjalo en 'eclipse'.",
+        "type": "string"
+      }
+    },
+    "title": "Eclipse"
+  },
+  "configurationDefaults": {
+    "[eclipse]": {
+      "editor.quickSuggestions": {
+        "comments": false,
+        "other": true,
+        "strings": false
+      }
+    }
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "language": "eclipse",
+        "path": "./syntaxes/eclipse.tmLanguage.json",
+        "scopeName": "source.eclipse"
+      }
+    ],
+    "languages": [
+      {
+        "aliases": [
+          "Eclipse",
+          "eclipse"
+        ],
+        "configuration": "./language-configuration.json",
+        "extensions": [
+          ".ec"
+        ],
+        "id": "eclipse"
+      }
+    ],
+    "commands": [
+      {
+        "command": "eclipse.ejecutar",
+        "title": "Eclipse: Ejecutar archivo",
+        "category": "Eclipse"
+      },
+      {
+        "command": "eclipse.ejecutarVm",
+        "title": "Eclipse: Ejecutar con máquina virtual",
+        "category": "Eclipse"
+      },
+      {
+        "command": "eclipse.ejecutarDepurador",
+        "title": "Eclipse: Ejecutar con depurador",
+        "category": "Eclipse"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "eclipse.ejecutar",
+          "when": "resourceLangId == eclipse",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "eclipse.ejecutar",
+          "when": "resourceLangId == eclipse"
+        },
+        {
+          "command": "eclipse.ejecutarVm",
+          "when": "resourceLangId == eclipse"
+        },
+        {
+          "command": "eclipse.ejecutarDepurador",
+          "when": "resourceLangId == eclipse"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "eclipse.ejecutar",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorLangId == eclipse"
+      },
+      {
+        "command": "eclipse.ejecutarVm",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v",
+        "when": "editorLangId == eclipse"
+      },
+      {
+        "command": "eclipse.ejecutarDepurador",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d",
+        "when": "editorLangId == eclipse"
+      }
+    ]
+  },
+  "description": "Colores y servidor de lenguaje (LSP) para Eclipse (.ec): autocompletado inteligente, ayuda al pasar el mouse, diagnósticos, definición, referencias y botón ▶ Ejecutar, todo en Rust",
+  "displayName": "Eclipse",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./extension.js",
+  "name": "eclipse-lenguaje",
+  "publisher": "kevin",
+  "version": "1.2.0",
+  "icon": "assets/icon.png"
+}

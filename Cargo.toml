@@ -1,0 +1,8 @@
+[package]
+name = "eclipse"
+version = "1.2.0"
+edition = "2021"
+description = "Eclipse 1.2 - Un lenguaje de programación en español, hecho en Rust"
+
+# Eclipse no necesita descargar nada: solo usa la librería
+# estándar de Rust. Por eso no hay [dependencies].

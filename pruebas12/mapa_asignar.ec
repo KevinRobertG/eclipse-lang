@@ -1,0 +1,10 @@
+sea mut m = {1: "uno"};
+m[2] = "dos";
+m[1] = "UNO";
+imprimir(m);
+sea mut lista = [10, 20, 30];
+lista[0] = 99;
+imprimir(lista);
+imprimir(lista[2]);
+sea mut anidado = {"datos": [1, 2, 3]};
+imprimir(anidado["datos"][1]);

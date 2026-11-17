@@ -1,0 +1,10 @@
+sea puertos = {21: "FTP", 22: "SSH", 80: "HTTP"};
+imprimir(puertos[21]);
+imprimir(puertos[80]);
+sea nombres = {"nombre": "Kevin", "ciudad": "México"};
+imprimir(nombres["nombre"]);
+sea flags = {verdadero: "sí", falso: "no"};
+imprimir(flags[verdadero]);
+imprimir(puertos);
+imprimir(tipo_de(puertos));
+imprimir(largo(puertos));

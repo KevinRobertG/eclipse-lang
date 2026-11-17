@@ -1,0 +1,2 @@
+usar noexiste;
+imprimir("hola");
